@@ -1,0 +1,60 @@
+{
+    "name": "whatsapp_item",
+    "title": "Item",
+    "width": 500,
+    "templates": {
+        "render": "./templates/template.php",
+        "content": "./templates/content.php"
+    },
+    "fields": {
+
+        "title": {
+            "label": "Nombre o Área",
+            "type": "text",
+            "attrs": {
+                "placeholder": "Ingresa área"
+            }
+        },
+
+        "meta": {
+            "label": "Texto Adicional",
+            "type": "text",
+            "attrs": {
+                "placeholder": "Ingresa texto adicional"
+            }
+        },
+
+        "telef": {
+            "label": "Numero WhatsApp",
+            "type": "number",
+            "description": "Ingrese el codigo de pais y el numero de WhatsApp sin espacios ni guiones. Por ejemplo para Perú el codigo de pais es +51 y el numero es 987654321, entonces solo debes escribir 51987654321",
+            "attrs": {
+                "placeholder": "Ingresa numero"
+            }
+        },
+        "mensaje": {
+            "label": "Mensaje de WhatsApp",
+            "type": "text",
+            "attrs": {
+                "placeholder": "Ingresa mensaje a mostrar en el WhatsApp"
+            }
+        },
+
+        "image": {
+            "label": "Image",
+            "type": "image"
+        }
+
+    },
+    "fieldset": {
+        "default": {
+            "fields": [
+                "title",
+                "meta",
+                "telef",
+                "mensaje",
+                "image"
+            ]
+        }
+    }
+}
